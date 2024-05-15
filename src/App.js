@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import CalendarComp from './components/CalendarComp';
+import Navbar from './components/Navbar';
+import { PrimeReactProvider } from 'primereact/api';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import Skills from './components/Skills';
+import WhatWeDo from './components/WhatWeDo';
+import FeaturedProjects from './components/FeaturedProjects';
+import WantToConnect from './components/WantToConnect';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <PrimeReactProvider> */}
+      {/* <CalendarComp/> */}
+      <Navbar/>
+      <Skills/>
+      <WhatWeDo/>
+      <FeaturedProjects/>
+      <WantToConnect/>
+      <Footer/>
+      {/* </PrimeReactProvider> */}
     </div>
   );
 }
