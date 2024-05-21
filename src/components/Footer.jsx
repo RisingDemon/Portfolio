@@ -4,21 +4,7 @@ import circleNline from "../assets/circleNline.png";
 export default function Footer() {
   return (
     <div className="mt-20">
-      {/* <div className="w-full flex items-center">
-        <div className="flex flex-col">
-          <div className="items-center text-3xl flex justify-start">
-            <b>Contact</b>
-          </div>
-          <div className="text-[#FFC700] items-center text-3xl flex justify-start">
-            <b className="pr-16">Don’t be shy!!</b>
-          </div>
-          <div className="items-center text-xl flex justify-start">
-          Feel free to get in touch with me. Don't hesitate to contact me with your project ideas or any questions you may have. I'm eager to discuss how we can work together to achieve your goals.
-          </div>
-        </div>
-      </div> */}
-
-      <div className="flex justify-around text-start">
+      <div className="flex justify-around text-start pb-9 pt-10 bg-[#6b737e]">
         <div className="w-1/5">
           <div className="items-center text-3xl">
             <b>Contact</b>
@@ -26,7 +12,7 @@ export default function Footer() {
           <div className="text-[#FFC700] items-center text-3xl mb-2">
             <b>Don’t be shy!!</b>
           </div>
-          <div className="items-center text-md mb-4">
+          <div className="items-center text-md mb-4 text-white">
             Feel free to get in touch with me. Don't hesitate to contact me with
             your project ideas or any questions you may have. I'm eager to
             discuss how we can work together to achieve your goals.
@@ -77,23 +63,23 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex text-white">
           <div className="mr-4 mt-2">
             <img className="h-48" src={circleNline} alt="" />
           </div>
           <div>
             <div>
-              <b className="text-lg">Location</b>
+              <b className="text-lg text-black">Location</b>
               <div>Kolhapur, India</div>
               <div>Pune, India</div>
             </div>
-            <div className="text-lg">
-              <b className="text-lg">Hours</b>
+            <div className="pb-3">
+              <b className="text-lg text-black">Hours</b>
               <div>Monday-Friday</div>
               <div>8am-6pm</div>
             </div>
-            <div className="text-lg">
-              <b className="text-lg">Contact</b>
+            <div className="pb-2">
+              <b className="text-lg text-black">Contact</b>
               <div>sahil.dixit15.sd@gmail.com</div>
               <div>+91 9922990528</div>
             </div>
@@ -102,12 +88,12 @@ export default function Footer() {
 
         <div className="flex gap-5 w-1/5">
           <div>
-            <div className="text-slate-600 text-6xl">2+</div>
-            <div className="text-slate-400 text-xl">Years Experience</div>
+            <div className=" text-6xl text-[#c1d1e0]">2+</div>
+            <div className=" text-xl text-[#97a0a9]">Years Experience</div>
           </div>
           <div>
-            <div className="text-slate-600 text-6xl">10+</div>
-            <div className="text-slate-400 text-xl">Projects</div>
+            <div className=" text-6xl text-[#c1d1e0]">10+</div>
+            <div className="text-xl text-[#97a0a9]">Projects Completed</div>
           </div>
         </div>
       </div>

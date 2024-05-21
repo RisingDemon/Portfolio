@@ -10,7 +10,9 @@ import firebaseImg from '../assets/firebaseImg.png';
 
 export default function Skills() {
   return (
-    <div className='h-96 mt-20 p-4 rounded-3xl shadow-[0_1px_9px] mb-7'>
+    // <div className='h-96 mt-20 p-4 rounded-3xl shadow-[0_1px_9px] mb-7'>
+    <div className='h-96 mt-20 p-4 rounded-3xl shadow-[0_1px_9px] mb-7 w-[96%] m-auto'>
+
         <div className='w-full flex justify-center items-center text-2xl mt-7'>
             <img className='w-12' src={bulb} alt="" />
             <div><b>Skills Acquired</b><hr className='w-32 border-[#FFE500] border-[1px]'/></div>

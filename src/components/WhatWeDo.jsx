@@ -14,16 +14,16 @@ function WhatWeDo() {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-x-6 gap-y-6 m-auto w-2/3 mt-10">
-        <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto transition transform ease duration-300 hover:scale-110">
           <img src={coding} alt="" />
         </div>
-        <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto transition transform ease duration-300 hover:scale-110">
           <img src={database} alt="" />
         </div>
-        <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto transition transform ease duration-300 hover:scale-110">
           <img src={frontend} alt="" />
         </div>
-        <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto transition transform ease duration-300 hover:scale-110">
           <img src={backend} alt="" />
         </div>
       </div>

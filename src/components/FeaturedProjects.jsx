@@ -1,5 +1,6 @@
 import React from "react";
 import { ThreeFiber } from "./ThreeFiber";
+// import "../index.css";
 
 export default function FeaturedProjects() {
   return (

@@ -14,7 +14,7 @@ import "./util";
 
 export const ThreeFiber = () => (
   <Canvas camera={{ position: [0, 0, 100], fov: 15 }}>
-    <ScrollControls pages={4} infinite>
+    <ScrollControls style={{height:"50%", top:"168px"}} pages={4} infinite>
       <Rig rotation={[0, 0, 0]}>
         <Carousel />
       </Rig>

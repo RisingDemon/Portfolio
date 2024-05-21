@@ -7,7 +7,7 @@ import line from "../assets/lilac dotted arrow.png";
 export default function Navbar() {
   return (
     <>
-      <nav className="flex items-center justify-between bg-white p-4 shadow-[0_3px_5px_-1px_slategrey]">
+      <nav className="flex items-center justify-between bg-white p-4 shadow-[0_3px_5px_-1px_slategrey] pl-16 pr-16">
         {/* Left side: Name of website */}
         <div className="text-black font-bold font-damion text-3xl">Sahil</div>
 
@@ -28,7 +28,8 @@ export default function Navbar() {
             </svg>
           </button>
           <button className="px-2">
-            <svg className="hover:fill-yellow-500"
+            <svg
+              className="hover:fill-yellow-500"
               width="31"
               height="31"
               viewBox="0 0 31 31"
@@ -85,17 +86,50 @@ export default function Navbar() {
           <div className="text-xl ml-6 w-72 mt-24">
             Enthusiastic Web Developer, Coder and Fitness Freak
           </div>
+
           <div className="w-40 absolute left-[63%] top-48">
+
+          {/* <div className="w-40 relative left-[-162px] top-[34px]"> */}
             <img src={frame} alt="" />
           </div>
           <div className="absolute top-[18%] left-[25%] w-[618px]">
             <img src={line} alt="" />
           </div>
-        <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72">
-          Get in touch
-        </div>
+          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72">
+            Get in touch
+          </div>
         </div>
       </div>
+
+      {/* <div className="h-96 w-full mt-7">
+        <div>
+          <div className="flex justify-center items-center">
+            <div className="border w-fit h-fit bg-[#595959] text-white rounded-[8px_8px_0_8px] p-2 mr-5 text-lg mb-19">
+              Hi, I am <b>Sahil</b> &#128075;
+            </div>
+            <div className="w-56 mt-7 z-10">
+              <img src={selfImg} alt="" />
+            </div>
+            <div className="text-xl ml-6 w-72 mt-24">
+              Enthusiastic Web Developer, Coder and Fitness Freak
+            </div>
+            <div>
+              <div>
+                <div className="w-40 relative left-[60rem] top-[-12rem]">
+                  <img src={frame} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-[18%] left-[25%] w-[618px]">
+            <img src={line} alt="" />
+          </div>
+          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72">
+            Get in touch
+          </div>
+        </div>
+      </div> */}
     </>
   );
 }
