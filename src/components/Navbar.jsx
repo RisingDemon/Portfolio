@@ -56,7 +56,7 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <button className="px-2">
+          {/* <button className="px-2">
             <svg
               width="30"
               height="15"
@@ -71,11 +71,11 @@ export default function Navbar() {
                 fill="black"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </nav>
 
-      <div className="md:h-96 w-full h-[30rem]">
+      <div className="md:h-96 w-full mt-7 md:mt-0 h-[30rem]">
         <div className="justify-between md:justify-center items-center flex flex-col md:flex-row h-full ">
           <div className="border w-fit h-fit bg-[#595959] text-white md:rounded-[8px_8px_0_8px] rounded-[15px_15px_0_15px] p-2 mr-5 text-xl mb-19">
             Hi, I am <b>Sahil</b> &#128075;
@@ -95,7 +95,7 @@ export default function Navbar() {
             <img src={line} alt="" />
           </div> */}
           {/* <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72"> */}
-          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 md:absolute left-[62%] top-96">
+          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 md:absolute left-[62%] top-96 cursor-pointer">
             Get in touch
           </div>
         </div>

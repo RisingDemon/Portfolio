@@ -17,7 +17,7 @@ export default function Skills() {
             <img className='w-12' src={bulb} alt="" />
             <div><b>Skills Acquired</b><hr className='w-32 border-[#FFE500] border-[1px]'/></div>
         </div>
-        <div className='md:flex justify-center items-center mt-10 mb-6 grid grid-cols-2 md:gap-16 gap-x-12 gap-y-10 ml-auto mr-auto w-fit'>
+        <div className='md:flex justify-center items-center mt-10 mb-6 grid grid-cols-2 md:gap-16 gap-x-12 gap-y-10 ml-auto mr-auto w-fit md:w-auto'>
             <div className='md:w-32 w-[101px] md:h-32 h-28 border shadow-[0_0_5px_-2px,0_10px_0_0_#9494F4] md:rounded-l-lg hover:bg-#9494F4 flex justify-center items-center'>
                 <img className='w-[84%]' src={webImg} alt="" />
             </div>

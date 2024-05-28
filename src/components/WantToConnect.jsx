@@ -6,7 +6,7 @@ export default function WantToConnect() {
       <div className="m-auto md:w-2/4 w-[83%] pb-8 shadow-[0_0_9px_-5px]">
         <div className="w-full flex justify-center items-center md:text-3xl text-xl">
           <div>
-            <div className="flex items-center ml-9">
+            <div className="flex items-center md:ml-9">
               <b>Want to connect with us? </b>
               <svg className="w-10 md:w-16"
                 width="72"
