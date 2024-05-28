@@ -12,7 +12,7 @@ import {
 import { easing } from "maath";
 import "./util";
 
-export const ThreeFiber = () => (
+export const ThreeFiberSm = () => (
   <Canvas camera={{ position: [0, 0, 100], fov: 15 }}>
     <ScrollControls style={{height:"50%", top:"168px"}} pages={4} infinite>
       <Rig rotation={[0, 0, 0]}>
@@ -40,7 +40,7 @@ function Rig(props) {
   return <group ref={ref} {...props} />;
 }
 
-function Carousel({ radius = 1.4, count = 8 }) {  //redius: 1.4
+function Carousel({ radius = 1.2, count = 8 }) {  //redius: 1.4
   return Array.from({ length: count }, (_, i) => (
     <Card
       key={i}
@@ -138,7 +138,9 @@ function Card({ url, backImageUrl, hoverKey, ...props }) {
         onPointerOut={pointerOut}
       >
         {
-          hovered? <planeGeometry args={[1, 1, 15, 15]}/> : <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
+          hovered? <planeGeometry args={[0.8, 0.8, 15, 15]}/> : <bentPlaneGeometry args={[0.1, 0.8, 0.8, 20, 20]} />
+        //   hovered? <planeGeometry args={[1, 1, 15, 15]}/> : <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
+        
         }
         {/* <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} /> */}
         {/* <planeGeometry args={[1, 1, 20, 20]} /> */}
@@ -152,7 +154,9 @@ function Card({ url, backImageUrl, hoverKey, ...props }) {
         onPointerOut={pointerOut}
       >
         {
-          hovered? <planeGeometry args={[1, 1, 20, 20]}/> : <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
+          hovered? <planeGeometry args={[0.8, 0.8, 20, 20]}/> : <bentPlaneGeometry args={[0.1, 0.8, 0.8, 20, 20]} />
+        //   hovered? <planeGeometry args={[1, 1, 15, 15]}/> : <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
+
         }
         {/* <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} /> */}
         {/* <planeGeometry args={[1, 1, 20, 20]} /> */}
