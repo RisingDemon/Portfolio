@@ -111,7 +111,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full flex flex-row gap-12 mt-9 ml-auto mr-auto mb-6">
+        <div className="w-[95%] flex flex-row gap-12 mt-9 ml-auto mr-auto mb-6">
           <div className="w-2/4">
             <div className="items-center text-xl">
               <b>Contact</b>
@@ -171,7 +171,7 @@ export default function Footer() {
           </div>
 
           <div className="flex text-white w-2/4">
-            <div className="mr-4 mt-2">
+            <div className="mr-4 mt-2 hidden md:inline-block">
               <img className="h-48" src={circleNline} alt="" />
             </div>
             <div>

@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className="md:h-96 w-full mt-7 h-[30rem]">
+      <div className="md:h-96 w-full h-[30rem]">
         <div className="justify-between md:justify-center items-center flex flex-col md:flex-row h-full ">
           <div className="border w-fit h-fit bg-[#595959] text-white md:rounded-[8px_8px_0_8px] rounded-[15px_15px_0_15px] p-2 mr-5 text-xl mb-19">
             Hi, I am <b>Sahil</b> &#128075;
@@ -100,7 +100,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="w-[100%] items-center justify-center hidden md:flex">
-          <div className="w-[681px] ml-[-10%] mt-[-18rem]">
+          <div className="w-[681px] ml-[-3%] mt-[-21rem]">
             <img src={line} alt="" />
           </div>
         </div>
