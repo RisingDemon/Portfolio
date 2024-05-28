@@ -13,7 +13,7 @@ function WhatWeDo() {
           <hr className="h w-32 border-[#FFE500] border-[1px]" />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-x-6 gap-y-6 m-auto w-2/3 mt-10">
+      <div className="grid md:grid-cols-2 gap-x-6 gap-y-6 m-auto md:w-2/3 w-[84%] mt-10">
         <div className="w-11/12 m-auto transition transform ease duration-300 hover:scale-110">
           <img src={coding} alt="" />
         </div>

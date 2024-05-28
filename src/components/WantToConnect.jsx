@@ -3,12 +3,12 @@ import React from "react";
 export default function WantToConnect() {
   return (
     <div className="mt-8">
-      <div className="m m-auto w-2/4 pb-8 shadow-[0_0_9px_-5px]">
-        <div className="w-full flex justify-center items-center text-3xl">
+      <div className="m-auto md:w-2/4 w-[83%] pb-8 shadow-[0_0_9px_-5px]">
+        <div className="w-full flex justify-center items-center md:text-3xl text-xl">
           <div>
             <div className="flex items-center ml-9">
               <b>Want to connect with us? </b>
-              <svg
+              <svg className="w-10 md:w-16"
                 width="72"
                 height="72"
                 viewBox="0 0 72 72"
@@ -48,7 +48,7 @@ export default function WantToConnect() {
         </div>
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl w-[57%] h-12 pl-4"
+            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
             type="text"
             placeholder="Enter your name"
           />
@@ -56,7 +56,7 @@ export default function WantToConnect() {
 
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl w-[57%] h-12 pl-4"
+            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
             type="text"
             placeholder="Enter your email"
           />
@@ -64,7 +64,7 @@ export default function WantToConnect() {
 
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl w-[57%] h-12 pl-4"
+            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
             type="text"
             placeholder="Enter your message"
           />

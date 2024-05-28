@@ -7,7 +7,7 @@ import line from "../assets/lilac dotted arrow.png";
 export default function Navbar() {
   return (
     <>
-      <nav className="flex items-center justify-between bg-white p-4 shadow-[0_3px_5px_-1px_slategrey] pl-16 pr-16">
+      <nav className="flex items-center justify-between bg-white p-4 shadow-[0_3px_5px_-1px_slategrey] md:pl-16 md:pr-16">
         {/* Left side: Name of website */}
         <div className="text-black font-bold font-damion text-3xl">Sahil</div>
 
@@ -75,28 +75,33 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className="h-96 w-full mt-7">
-        <div className="flex justify-center items-center">
-          <div className="border w-fit h-fit bg-[#595959] text-white rounded-[8px_8px_0_8px] p-2 mr-5 text-lg mb-19">
+      <div className="md:h-96 w-full mt-7 h-[30rem]">
+        <div className="justify-between md:justify-center items-center flex flex-col md:flex-row h-full ">
+          <div className="border w-fit h-fit bg-[#595959] text-white md:rounded-[8px_8px_0_8px] rounded-[15px_15px_0_15px] p-2 mr-5 text-xl mb-19">
             Hi, I am <b>Sahil</b> &#128075;
           </div>
-          <div className="w-56 mt-7 z-10">
+          <div className="w-56 md:mt-7 z-10">
             <img src={selfImg} alt="" />
           </div>
-          <div className="text-xl ml-6 w-72 mt-24">
+          <div className="md:text-xl md:ml-6 md:w-72 md:mt-24 text-xl w-1/2">
             Enthusiastic Web Developer, Coder and Fitness Freak
           </div>
 
-          <div className="w-40 absolute left-[63%] top-48">
-
-          {/* <div className="w-40 relative left-[-162px] top-[34px]"> */}
+          <div className="md:w-40 w-28 absolute md:left-[63%] left-[52%] md:top-48 top-[26rem]">
+            {/* <div className="w-40 relative left-[-162px] top-[34px]"> */}
             <img src={frame} alt="" />
           </div>
-          <div className="absolute top-[18%] left-[25%] w-[618px]">
+          {/* <div className="absolute top-32 left-[25%] w-[618px]">
             <img src={line} alt="" />
-          </div>
-          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72">
+          </div> */}
+          {/* <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72"> */}
+          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 md:absolute left-[62%] top-96">
             Get in touch
+          </div>
+        </div>
+        <div className="w-[100%] items-center justify-center hidden md:flex">
+          <div className="w-[681px] ml-[-10%] mt-[-18rem]">
+            <img src={line} alt="" />
           </div>
         </div>
       </div>
@@ -104,7 +109,7 @@ export default function Navbar() {
       {/* <div className="h-96 w-full mt-7">
         <div>
           <div className="flex justify-center items-center">
-            <div className="border w-fit h-fit bg-[#595959] text-white rounded-[8px_8px_0_8px] p-2 mr-5 text-lg mb-19">
+            <div className="border w-fit h-fit bg-[#595959] text-white rounded-[8px_8px_0_8px] p-2 mr-5 text-lg mb-19 ml-40">
               Hi, I am <b>Sahil</b> &#128075;
             </div>
             <div className="w-56 mt-7 z-10">
@@ -112,21 +117,20 @@ export default function Navbar() {
             </div>
             <div className="text-xl ml-6 w-72 mt-24">
               Enthusiastic Web Developer, Coder and Fitness Freak
+            </div> */}
+      {/* <div>
+              <div> */}
+      {/* <div className="w-40 relative left-[-10rem] top-[2rem]">
+              <img src={frame} alt="" />
+            </div> */}
+      {/* </div>
+            </div> */}
+      {/* <div className="relative top-[-16rem] left-[26rem] w-[618px]">
+              <img src={line} alt="" />
             </div>
-            <div>
-              <div>
-                <div className="w-40 relative left-[60rem] top-[-12rem]">
-                  <img src={frame} alt="" />
-                </div>
-              </div>
+            <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 relative left-[59rem] top-[-34rem] bottom-72">
+              Get in touch
             </div>
-          </div>
-
-          <div className="absolute top-[18%] left-[25%] w-[618px]">
-            <img src={line} alt="" />
-          </div>
-          <div className="text-white bg-black w-fit h-fit p-2 border-[#FFE600] border-2 absolute right-1/3 bottom-72">
-            Get in touch
           </div>
         </div>
       </div> */}
