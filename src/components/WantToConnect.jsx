@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+// import * as dotenv from "dotenv";
+// import sgMail from "@sendgrid/mail";
 
+// dotenv.config();
 export default function WantToConnect() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const customClassNames = "inputBar";
+  const submitDetails = async () => {
+    console.log(name, email, message);
+    const info = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    const arg = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(info),
+    };
+    const response = await axios.post(
+      "https://server-portfolio-u9j8.onrender.com/cold-boot",
+      arg
+    );
+    const result = await response.data;
+    // if result code is 200, then show a success message
+    if (result.message === "Email sent") {
+      alert("Your message has been sent successfully");
+      document.getElementsByClassName("inputBar")[0].value = "";
+      document.getElementsByClassName("inputBar")[1].value = "";
+      document.getElementsByClassName("inputBar")[2].value = "";
+    }
+    console.log(result);
+  };
+  // const getName = (name) => setName(name);
+
   return (
     <div className="mt-8">
       <div className="m-auto md:w-2/4 w-[83%] pb-8 shadow-[0_0_9px_-5px]">
@@ -8,9 +46,8 @@ export default function WantToConnect() {
           <div>
             <div className="flex items-center md:ml-9">
               <b>Want to connect with us? </b>
-
-              {/* <b>Want to connect with us? </b> */}
-              <svg className="w-10 md:w-16"
+              <svg
+                className="w-10 md:w-16"
                 width="72"
                 height="72"
                 viewBox="0 0 72 72"
@@ -50,30 +87,36 @@ export default function WantToConnect() {
         </div>
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
+            className={`border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4 ${customClassNames}`}
             type="text"
             placeholder="Enter your name"
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
 
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
+            className={`border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4 ${customClassNames}`}
             type="text"
             placeholder="Enter your email"
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
 
         <div className="text-xl mt-5">
           <input
-            className="border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4"
+            className={`border-2 border-[#9494F4]  rounded-3xl md:w-[57%] w-[77%] md:h-12 h-10 pl-4 ${customClassNames}`}
             type="text"
             placeholder="Enter your message"
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
 
         <div>
-          <button className="bg-[#7575c8] text-white w-24 h-8 mt-5 rounded-md hover:bg-[#6161a7]">
+          <button
+            className="bg-[#7575c8] text-white w-24 h-8 mt-5 rounded-md hover:bg-[#6161a7]"
+            onClick={submitDetails}
+          >
             Send
           </button>
         </div>

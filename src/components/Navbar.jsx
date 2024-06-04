@@ -1,10 +1,37 @@
+
 import React from "react";
+import { useEffect } from "react";
+import axios from "axios";
+
 import selfImg from "../assets/self.jpg";
 import frame from "../assets/frame.png";
 import line from "../assets/lilac dotted arrow.png";
 // import "../";
 
 export default function Navbar() {
+
+  const doSomething = async () => {
+    console.log("Hello from Navbar");
+    const info = {
+      prompt: "",
+    };
+    const arg = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(info),
+    };
+    const response = await axios.post(
+      "https://server-portfolio-u9j8.onrender.com/cold-boot",arg
+    );
+    const result = await response.data;
+    console.log(result);
+  }
+  useEffect( () => {
+    doSomething();
+  }, []);
+
   return (
     <>
       <nav className="flex items-center justify-between bg-white p-4 shadow-[0_3px_5px_-1px_slategrey] md:pl-16 md:pr-16">
