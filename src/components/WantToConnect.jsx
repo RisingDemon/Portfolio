@@ -8,6 +8,8 @@ export default function WantToConnect() {
           <div>
             <div className="flex items-center md:ml-9">
               <b>Want to connect with us? </b>
+
+              {/* <b>Want to connect with us? </b> */}
               <svg className="w-10 md:w-16"
                 width="72"
                 height="72"
